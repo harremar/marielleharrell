@@ -1,0 +1,254 @@
+li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  // THIS IS THE MAIN NAVIGATION HOLDER
+  header {
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+  
+    // PRIMARY CONTAINS HAMBUGER MENU, LOGO, LINKS, AND ICONS
+    .primary-nav {
+      width: 100%;
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      padding-top: 30px;
+      transition: 0.3s;
+  
+      // HAMBUGER MENU IS NOT DISPLAYED
+      .hamburger {
+        display: none;
+        position: block;
+        left: 20px;
+      }
+  
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3.2px;
+        border-radius: 10px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: black;
+      }
+      // LINKS ARE DISPLAYED IN THE MIDDLE
+      .links {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        a {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 16px;
+          text-decoration: none;
+          color: black;
+          transition: 0.3s;
+          span{
+            color: rgb(63, 165, 164);
+            font-size: 12px;
+        }
+        }
+        a:hover {
+          color: rgb(63, 165, 164);
+        }
+      }
+  
+      .logo{
+    
+        a {
+            font-size: 80px;
+            text-decoration: none;
+            color: #416D8C;
+            font-family: myFont;
+        }
+      }
+
+    }
+    // HOLDS LINKS THAT ARE DISPLAYED ON SMALLER SCREEN
+    .secondary-nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      display: none;
+      transition: 0.3s;
+  
+      .nav-menu {
+        transition: 0.3s;
+        ul {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          li {
+            a {
+              margin-top: 16px;
+              height: 40px;
+              padding: 10px 20px;
+              text-decoration: none;
+              color: #333;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+            }
+            a:hover {
+              color: #416D8C;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    header {
+      min-height: 60px;
+      .secondary-nav {
+        .nav-menu {
+          .disappear {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    header {
+      min-height: 60px;
+      .primary-nav {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        padding-top: 30px;
+        justify-content: none;
+        
+        // HAMBUGER IS DISPLAYED
+        .hamburger {
+          display: block;
+          padding-top: 30px;
+        }
+        // LINKS IN MAIN NAV DISAPPEAR
+        .links {
+          display: none;
+        }
+        a {
+          margin: 0 auto;
+          width: 50px;
+          .logo {
+            background-color: lightcoral;
+            width: 50px;
+            height: 30px;
+            // margin-left: 80px;
+            margin: 0 auto;
+            text-align: right;
+            h1 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      // LINKS IN SECOND NAV APPEAR
+      .secondary-nav {
+        display: block;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    header {
+      min-height: 60px;
+      .secondary-nav {
+        padding-top: 10px;
+        .nav-menu {
+          min-height: 150px;
+  
+          ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            li {
+              a {
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #111;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                color: #333;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: 0;
+              }
+              a:hover {
+                color: #416D8C;
+                background-color: #fafafa;
+              }
+            }
+          }
+        }
+      }
+      // MENU IS OFF
+      .nav-menu {
+        display: none;
+        top: 100px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  
+        ul {
+          flex-direction: column;
+          li {
+            margin-bottom: 5px;
+            width: 100%;
+          }
+        }
+      }
+  
+      // MENU IS ON
+      .nav-menu.active {
+        display: flex;
+        margin: 0 auto;
+      }
+  
+      .nav-item {
+        margin: 2.5rem 0;
+      }
+  
+      // CHANGING OF HAMBUGER ICON TO X
+      .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+  
+      .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+  
+      .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+  

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px
+  }
+  
+  // FONTS USED FOR THE SITE
+@font-face {
+  font-family: openB;
+  src: url(fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: openBI;
+  src: url(fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: openR;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: openI;
+  src: url(fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: openL;
+  src: url(fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: openLI;
+  src: url(fonts/OpenSans-LightItalic.ttf);
+}
+
+
+  @font-face {
+      font-family: myFont;
+      src: url(../css/fonts/DancingScript-VariableFont_wght.ttf);
+
+
+}
+  

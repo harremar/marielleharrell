@@ -1,0 +1,151 @@
+.work{
+    margin-top: -2px;
+    width: 100%;
+    min-height: 730px;
+    padding-bottom: 50px;
+
+    .workTitle{
+        padding-top: 50px;
+        text-align: center;
+        color: #416D8C;
+        font-size: 40px;
+        font-family: openR;
+        span{
+            font-size: 20px;
+            color: rgb(63, 165, 164);
+        }
+    }
+
+    .workContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        min-height: 400px;
+        // background-color: pink;
+        max-width: 900px;
+        margin: 10px auto;
+        
+        .workImage{
+            width: 400px;
+            height: 250px;
+            img{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .workImage2{
+            width: 400px;
+            height: 320px;
+            img{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .workInfo{
+            width: 400px;
+            min-height: 250px;
+
+            h1{
+                color: #416D8C;
+                font-family: openL;
+                font-size: 36px;
+                text-align: center;
+            }
+
+            p{
+                color: #879aa9;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+                .workButton{
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                font-family: openL;
+                border: solid rgb(63, 165, 164) 2px;
+                    color: rgb(63, 165, 164);
+                    border-radius: 5px;
+                    transition: 0.3s;
+                }
+                .workButton:hover{
+                    border: solid rgb(63, 165, 164) 2px;
+                    color: white;
+                    background-color: rgb(63, 165, 164);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .work{
+        // background-color: red;
+        .workTitle{
+            font-size: 50px;
+        }
+        .workContainer{
+            flex-direction: column;
+            // background-color: khaki;
+            margin-bottom: 50px;
+            min-height: 300px;
+
+            .workImage{
+                width: 300px;
+                height: 210px;
+            }
+            .workImage2{
+                width: 300px;
+                height: 250px;
+            }
+            .workInfo{
+                padding-top: 20px;
+                // background-color: lightgreen;
+                min-height: 200px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 455px){
+    .work{
+        // background-color: blue;
+        .workTitle{
+            font-size: 50px;
+        }
+        .workContainer{
+            flex-direction: column;
+
+            .workImage{
+                width: 300px;
+                height: 200px;
+            }
+            .workImage{
+                width: 300px;
+                height: 230px;
+            }
+            .workInfo{
+                padding: 10px;
+                padding-top: 20px;
+                width: 220px;
+                text-align: left;
+                font-size: 12px;
+            }
+        }
+    }
+}
