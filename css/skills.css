@@ -1,0 +1,90 @@
+.skillsTitle {
+  padding-top: 50px;
+  text-align: center;
+  font-family: openR;
+  color: white;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 900px;
+  margin: 10px auto;
+  margin-top: 20px;
+}
+.skillsContainer .logo {
+  width: 120px;
+  height: 120px;
+  margin: 18px;
+}
+.skillsContainer .logo img {
+  width: 120px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.skillsContainer .logo:nth-child(2) {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+.skillsContainer .logo:nth-child(3) {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+.skillsContainer .logo:nth-child(4) {
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+.skillsContainer .logo:nth-child(5) {
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+.skillsContainer .logo:nth-child(6) {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+.skillsContainer .logo:nth-child(7) {
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms;
+}
+.skillsContainer .logo:nth-child(8) {
+  -webkit-transition-delay: 700ms;
+          transition-delay: 700ms;
+}
+.skillsContainer .logo:nth-child(9) {
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+.skillsContainer .logo:nth-child(10) {
+  -webkit-transition-delay: 900ms;
+          transition-delay: 900ms;
+}
+.skillsContainer .logo:nth-child(11) {
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
+}
+
+@media only screen and (max-width: 900px) {
+  .skillsTitle {
+    margin-top: 20px;
+  }
+  .skillsContainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

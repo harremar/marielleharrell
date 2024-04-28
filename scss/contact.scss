@@ -4,7 +4,8 @@
     min-height: 90vh;
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: #416D8C;
+    background-image: linear-gradient(to right, #90F0DF, #38A0EC); 
+
     .contact-content{
         width: 950px;
         margin: 0 auto;
@@ -14,7 +15,7 @@
             font-family: openR;
             span{
                 font-size: 20px;
-                color: rgb(63, 165, 164);
+                color: $site-pink;
             }
         }
         h1{
@@ -25,25 +26,32 @@
             font-size: 48px;
         }
         p{
-            max-width: 400px;
+            max-width: 500px;
             margin: 0 auto;
             font-family: openL;
             text-align: center;
-            color: rgba($color: #fff, $alpha: 0.5);
+            font-size: 20px;
+            color: white;
             
         }
         a{
             text-decoration: none;
             margin: 0 auto;
             .btn-email{
-                margin: 0 auto;
-                margin-top: 35px;
-                width: 200px;
-                height: 60px;
-                border: solid white 2px;
-                color: white;
-                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                // padding: 10px;
+                color: $site-white;
+                background-color: $site-pink;
+                background-image: linear-gradient(to bottom, #fb62a7, #FA0F79); 
+                width: 170px;
+                margin: 30px auto;
+                border-radius: 50px;
                 transition: 0.3s;
+                box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.4),
+                0px 1px 3px 1px rgba(60, 64, 67, 0.25);                      
+                cursor: pointer;
                 
                 h3{
                     font-family: openL;
@@ -51,11 +59,6 @@
                     text-align: center;
                     padding-top: 15px;
                 }
-            }
-            .btn-email:hover{
-                border: solid rgb(63, 165, 164) 2px;
-                color: rgb(63, 165, 164);
-                cursor: pointer;
             }
         }
     }
@@ -74,25 +77,22 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     #contact{
         padding-top: 50px;
-        // background-color: red;
         min-height: 350px;
         .contact-content{
             width: 80%;
             height: 350px;
             margin: 0 auto;
-            // background-color: aqua;
             h6{
-                text-align: center;
+                text-align: left;
                 span{
 
                 }
             }
             h1{
-                margin-top: 20px;
-                // background-color: black;
+                margin-top: 40px;
                 font-size: 28px;
 
             }

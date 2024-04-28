@@ -10,7 +10,6 @@ li {
   header {
     width: 100%;
     min-height: 60px;
-    background-color: white;
   
     // PRIMARY CONTAINS HAMBUGER MENU, LOGO, LINKS, AND ICONS
     .primary-nav {
@@ -54,12 +53,12 @@ li {
           color: black;
           transition: 0.3s;
           span{
-            color: rgb(63, 165, 164);
+            color: $site-pink;
             font-size: 12px;
         }
         }
         a:hover {
-          color: rgb(63, 165, 164);
+          color: $site-pink-hover;
         }
       }
   
@@ -208,7 +207,6 @@ li {
         display: none;
         top: 100px;
         flex-direction: column;
-        background-color: white;
         width: 100%;
         text-align: center;
         transition: 0.3s;

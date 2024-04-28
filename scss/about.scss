@@ -1,180 +1,95 @@
 .about{
     margin-top: -2px;
     width: 100%;
-    min-height: 730px;
+    min-height: 800px;
     padding-bottom: 50px;
-    background-color: #416D8C;
-
-    .aboutTitle{
-        padding-top: 50px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-        font-family: openR;
-        span{
-            font-size: 20px;
-            color: rgb(63, 165, 164);
-        }
+    background-color: white;
+    position: relative;
+    svg{
+        position: absolute;
+        bottom: 0;
     }
 
-    .aboutContainer{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-top: 30px;
-        
-        .aboutImage{
-            width: 350px;
-            height: 450px;
-            background-color: white;
-            background-image: url(../images/marielle-harrell-340x340.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    .about-holder{
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 200px;
 
-        .aboutInfo{
-            width: 400px;
-            min-height: 460px;
-            // background-color: black;
-
-            p{
-                color: white;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-
-            .aboutLinks{
-                width: 100%;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                // background-color: forestgreen;
-
-                .aboutLinksInsta{
-                    width: 50px;
-                    height: 50px;
-                    background-image: url(../images/instagramblue.svg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                }
-                .aboutLinksInsta:hover{
-                    background-image: url(../images/icons8-instagramgreen.svg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    cursor: pointer;
-                    transition: 0.3s ease-in-out;
-
-                }
-
-                .aboutLinksGit{
-                    width: 50px;
-                    height:50px;
-                    background-image: url(../images/githubblue.svg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                }
-                .aboutLinksGit:hover{
-                    cursor: pointer;
-                    background-image: url(../images/icons8-githubgreen.svg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    transition: 0.3s ease-in-out;
-
-                }
-
-                .aboutLinksLink{
-                    width: 50px;
-                    height: 50px;
-                    background-image: url(../images/linkedinblue.svg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                }
-
-                .aboutLinksLink:hover{
-                    cursor: pointer;
-                    background-image: url(../images/icons8-linkedingreen.svg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    transition: 0.3s ease-in-out;
-                }
+        .aboutTitle{
+            padding-top: 50px;
+            text-align: left;
+            color: #333;
+            font-size: 40px;
+            font-family: openR;
+            span{
+                font-size: 20px;
+                color: $site-pink;
             }
         }
-    }
-
-    .skillsTitle{
-        padding-top: 50px;
-        text-align: center;
-        font-family: openR;
-        color: white;
-        font-size: 40px;
-        margin-top: 50px;
-    }
-    .skillsContainer{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        max-width: 900px;
-        margin: 10px auto;
-        margin-top: 20px;
-        // background-color: black;
-        
-        .logo{
-            width: 120px;
-            height: 120px;
-            // background-color: red;
-            margin: 18px;
-
-            img {
-                width: 120px;
-                height: 120px;
+    
+        .aboutContainer{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            
+            .aboutImage{
+                min-width: 350px;
+                height: 450px;
+                background-color: #333;
+                background-image: url(../images/marielle-harrell-340x340.jpg);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                padding: 20px;
+            }
+    
+            .aboutInfo{
+                padding-left:  30px;
+    
+                p{
+                    color: #333;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 18px;
+                }
+
+                a{
+                    float: left;
+                    text-decoration: none;
+                    .btn-checkout{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        margin-top:10px;
+                        padding: 15px;
+                        color: $site-white;
+                        background-color: $site-pink;
+                        background-image: linear-gradient(to bottom, #fb62a7, #FA0F79); 
+    
+                        border-radius: 50px;
+                        transition: 0.3s;
+                        box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.4),
+                        0px 1px 3px 1px rgba(60, 64, 67, 0.25);                      
+                        cursor: pointer;
+                    }
+                    .btn-checkout:hover{
+                        background-color: $site-pink-hover;
+                    }
+                }
+    
             }
         }
-        .logo:nth-child(2){
-            transition-delay: 100ms;
-        }
-        .logo:nth-child(3){
-            transition-delay: 200ms;
-        }.logo:nth-child(4){
-            transition-delay: 300ms;
-        }.logo:nth-child(5){
-            transition-delay: 400ms;
-        }.logo:nth-child(6){
-            transition-delay: 500ms;
-        }.logo:nth-child(7){
-            transition-delay: 600ms;
-        }.logo:nth-child(8){
-            transition-delay: 700ms;
-        }.logo:nth-child(9){
-            transition-delay: 800ms;
-        }
-        .logo:nth-child(10){
-            transition-delay: 900ms;
-        }.logo:nth-child(11){
-            transition-delay: 1000ms;
-        }
-        
     }
 }
 
 @media only screen and (max-width: 900px){
     .about{
-        // background-color: red;
         .aboutTitle{
             font-size: 50px;
         }
         .aboutContainer{
             flex-direction: column;
+            justify-content: left;
+            text-align: left;
 
             .aboutImage{
                 width: 300px;
@@ -184,6 +99,8 @@
                 padding-top: 20px;
                 // background-color: lightgreen;
                 min-height: 200px;
+                
+                padding-left: 0;
             }
         }
         .skillsTitle{
@@ -206,33 +123,25 @@
     }
 }
 
-@media only screen and (max-width: 455px){
+@media only screen and (max-width: 500px){
     .about{
-        // background-color: blue;
-        .aboutTitle{
-            font-size: 50px;
-        }
-        .aboutContainer{
-            flex-direction: column;
-
-            .aboutImage{
-                width: 220px;
-                height: 300px;
+        .about-holder{
+            .aboutTitle{
+                font-size: 32px;
             }
-            .aboutInfo{
-                padding: 10px;
-                padding-top: 20px;
-                width: 220px;
-                text-align: left;
-                font-size: 12px;
-
-                .aboutLinks{
-                    width: 220px;
-                justify-content: space-between;
-
+            .aboutContainer{
+                flex-direction: column;
+    
+                .aboutImage{
+                    min-width: 250px;
+                    height: 300px;
+                }
+                .aboutInfo{
+                    padding-left: 0;
                 }
             }
         }
+        
         .skillsTitle{
             margin-top: 20px;
         }

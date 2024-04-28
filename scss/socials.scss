@@ -1,7 +1,6 @@
 .nav-socials{
     width: 60px;
     height: 240px;
-    // background-color: white;
     position: fixed;
     bottom: 80px;
     left: 50px;
@@ -10,73 +9,52 @@
     justify-content: center;
 
     .social2{
-        background-image: url(../images/icons8-facebook.svg);
+        background-image: url(../images/socials/facebook.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         height: 30px;
         width: 30px;  
         margin: 15px auto;
-    }
-    .social2:hover{
-        background-image: url(../images/icons8-facebookgreen.svg);
         cursor: pointer;
-        transition: 0.3s ease-in-out;
-
     }
 
     .social3{
-        background-image: url(../images/linkedinblue.svg);
+        background-image: url(../images/socials/linkedin.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         height: 30px;
         width: 30px;  
         margin: 15px auto;
-    }
-    .social3:hover{
-        background-image: url(../images/icons8-linkedingreen.svg);
         cursor: pointer;
-        transition: 0.3s ease-in-out;
-
     }
 
     .social4{
-        background-image: url(../images/instagramblue.svg);
+        background-image: url(../images/socials/instagram.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         height: 30px;
         width: 30px;  
         margin: 15px auto;
-    }
-    .social4:hover{
-        background-image: url(../images/icons8-instagramgreen.svg);
         cursor: pointer;
-        transition: 0.3s ease-in-out;
-
     }
 
     .social5{
-        background-image: url(../images/githubblue.svg);
+        background-image: url(../images/socials/github.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         height: 30px;
         width: 30px;  
         margin: 15px auto;
-    }
-    .social5:hover{
-        background-image: url(../images/icons8-githubgreen.svg);
         cursor: pointer;
-        transition: 0.3s ease-in-out;
-
     }
 }
 
 @media (max-width: 650px) {
     .nav-socials{
-        // background-color: red;
         left: 5px;
         bottom: 10px;
         height: 160px;
@@ -84,7 +62,6 @@
             height: 30px;
             width: 30px;
             margin: 10px;
-            // background-color: pink;
         }
     }
     }
