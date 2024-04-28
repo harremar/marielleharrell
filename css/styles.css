@@ -473,7 +473,7 @@ header .secondary-nav .nav-menu ul li a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 20px;
   color: #ebebeb;
   background-color: #FA0F79;
@@ -488,6 +488,61 @@ header .secondary-nav .nav-menu ul li a:hover {
 }
 #home .home-content .tabsHolder a .btn-checkout:hover {
   background-color: #d70d68;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fb62a7), to(#de0c6a));
+  background-image: linear-gradient(to bottom, #fb62a7, #de0c6a);
+}
+#home .home-content .tabsHolder a .btn-checkout {
+  /* Initial position */
+  position: relative;
+  -webkit-animation: moveUpDown 1.5s infinite alternate;
+          animation: moveUpDown 1.5s infinite alternate; /* Adjust the animation duration and other properties as needed */
+}
+@-webkit-keyframes moveUpDown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); /* Adjust the distance and direction of movement */
+  }
+}
+@keyframes moveUpDown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); /* Adjust the distance and direction of movement */
+  }
+}
+#home .home-content .text-holder-header {
+  /* Initial position */
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-animation: slideFromRight 1s forwards;
+          animation: slideFromRight 1s forwards;
+}
+@-webkit-keyframes slideFromRight {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @media (max-width: 850px) {
@@ -656,7 +711,7 @@ header .secondary-nav .nav-menu ul li a:hover {
 .about {
   margin-top: -2px;
   width: 100%;
-  min-height: 800px;
+  min-height: 900px;
   padding-bottom: 50px;
   background-color: white;
   position: relative;
@@ -734,9 +789,29 @@ header .secondary-nav .nav-menu ul li a:hover {
   -webkit-box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.4), 0px 1px 3px 1px rgba(60, 64, 67, 0.25);
           box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.4), 0px 1px 3px 1px rgba(60, 64, 67, 0.25);
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .about .about-holder .aboutContainer .aboutInfo a .btn-checkout:hover {
   background-color: #d70d68;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fb62a7), to(#de0c6a));
+  background-image: linear-gradient(to bottom, #fb62a7, #de0c6a);
+}
+.about .about-holder .aboutContainer .aboutInfo a .btn-checkout {
+  /* Initial position */
+  position: relative;
+  -webkit-animation: moveUpDown 1.5s infinite alternate;
+          animation: moveUpDown 1.5s infinite alternate; /* Adjust the animation duration and other properties as needed */
+}
+@keyframes moveUpDown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); /* Adjust the distance and direction of movement */
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -896,8 +971,8 @@ header .secondary-nav .nav-menu ul li a:hover {
   font-family: openL;
   color: white;
   background-color: #38A0EC;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#67bbf7), to(#38A0EC));
-  background-image: linear-gradient(to bottom, #67bbf7, #38A0EC);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#71bff7), to(#38A0EC));
+  background-image: linear-gradient(to bottom, #71bff7, #38A0EC);
   -webkit-box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.2);
           box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.2);
   -webkit-transition: 0.3s;
@@ -906,6 +981,8 @@ header .secondary-nav .nav-menu ul li a:hover {
 .work .workContainer .workInfo a .workButton:hover {
   color: white;
   background-image: #1f84cb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#71bff7), to(#1f84cb));
+  background-image: linear-gradient(to bottom, #71bff7, #1f84cb);
   cursor: pointer;
 }
 
@@ -1037,6 +1114,26 @@ header .secondary-nav .nav-menu ul li a:hover {
   font-size: 16px;
   text-align: center;
   padding-top: 15px;
+}
+#contact .contact-content a .btn-email {
+  /* Initial position */
+  position: relative;
+  -webkit-animation: moveUpDown 1.5s infinite alternate;
+          animation: moveUpDown 1.5s infinite alternate; /* Adjust the animation duration and other properties as needed */
+}
+#contact .contact-content a .btn-email:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fb62a7), to(#de0c6a));
+  background-image: linear-gradient(to bottom, #fb62a7, #de0c6a);
+}
+@keyframes moveUpDown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); /* Adjust the distance and direction of movement */
+  }
 }
 
 @media (max-width: 1000px) {

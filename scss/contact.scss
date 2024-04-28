@@ -60,6 +60,25 @@
                     padding-top: 15px;
                 }
             }
+            .btn-email {
+                /* Initial position */
+                position: relative;
+                animation: moveUpDown 1.5s infinite alternate; /* Adjust the animation duration and other properties as needed */
+            }
+            .btn-email:hover{
+                background-image: linear-gradient(to bottom, #fb62a7, #de0c6a); 
+
+            }
+            
+            @keyframes moveUpDown {
+                from {
+                    transform: translateY(0);
+                }
+                to {
+                    transform: translateY(-5px); /* Adjust the distance and direction of movement */
+                }
+            }
+            
         }
     }
 }
